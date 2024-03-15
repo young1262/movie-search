@@ -15,9 +15,7 @@
         <Card v-for="movie in movieList" v-bind:aa="movie"/>
         <!-- aa라는 이름으로 movie가 전달됨 -->
       </div>
-      <div class="no-result" v-else>
-        <h3>No search results for '{{ search_query }}'</h3>
-      </div>
+      
     </main>   
   </div>
 </template>
@@ -106,10 +104,6 @@ $color:#424769;
       max-width: 1400px;
       margin: auto;
     }
-    .no-result {
-      text-align: center;
-      
-      padding: 50px 0;
-    }
+ 
   }
 </style>
