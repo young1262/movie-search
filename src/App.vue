@@ -37,13 +37,13 @@ const handleSearch = async () => {
 
 
 
-// const popular = async () => {
-//   movieList.value = await fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1&api_key=41d9d6696bb40e4d8f0d33b090c15ae5')
-//     .then(response => response.json())
-//     .then(response => response.results)
-//     console.log('받아온 데이타', movieList.value)
-// }
-// popular();
+ const popular = async () => {
+   movieList.value = await fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1&api_key=41d9d6696bb40e4d8f0d33b090c15ae5')
+     .then(response => response.json())
+     .then(response => response.results)
+     console.log('받아온 데이타', movieList.value)
+ }
+ popular();
 </script>
 
 <style lang="scss" scoped>
